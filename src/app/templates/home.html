@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="{{url_for('static', path='/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-image: linear-gradient(#1a1aff, #f7f7f7);">
+        <div class="mheader">
+            <!-- <a style="font-family: 'Noto Sans', sans-serif"> </a> -->
+            <a style="font-family: 'Noto Sans', sans-serif" href="/home"> Home </a>
+            <a style="font-family: 'Noto Sans', sans-serif" href="/about"> About Us </a>
+            <a style="font-family: 'Noto Sans', sans-serif" href="/about"> Help </a>
+        </div>
+        <p style="color: aliceblue; font-size: 45px; margin-left: 8.5%; margin-right: 5%; text-align: left; text-decoration: solid;
+        font-weight: bolder;">
+            Fake News Detector
+        </p>
+        <img src="static/fake_news.jpg" style="height: 370px; width: 350px; float:left
+        ;margin-left: 7.5%; margin-bottom: 3%; border-radius: 50%">
+        <p style="color: aliceblue; font-size: 20px; margin-left: 5%; margin-right: 5%; text-align: left;float:left;margin-top:0%">
+            Try the Fake News Detector to check if the news article you are reading is reliable.<br>
+            The Fake detector predicts the fakeness of a news article.<br>
+            Also know about the biasedness and sarcasm present.
+        </p>
+        <br><br><br><br>
+        <div><p><a href="#tryitout" style="float:left; margin-left: 5%;margin-top:1%;color: #7354e4;
+            font-size: 21px;font-family: 'Noto Sans', sans-serif;background-color:#f7f7f7;text-decoration: none;
+            border-radius: 10px;padding-left:5px;padding-top:5px;padding-bottom:5px;padding-right: 5px;width:12%;text-align: center;
+            font-weight:lighter">
+            Try it out</a></p></div>
+
+        <div class="top_div_item" id="tryitout" style="margin-bottom:10%;background-image: linear-gradient(to right, #eff0d3, #f7f7f7);">
+            <p class="top_div_item_title" style="margin-top: 3; font-size: 35px">Try the News Detector</p>
+                    <form action="/result" method="post">
+                    <p class="top_div_small_p" style="margin-top: 5%">News Title</p>
+                    <textarea type="text" placeholder="Title" name="title" style="height: 4.5%; margin-top:2%"></textarea>
+                    <p class="top_div_small_p" style="margin-top: 5%">Article</p>
+                    <textarea type="text" placeholder="Paste your Article here" name="article" style="margin-top: 2%"></textarea>
+                    <p class="top_div_small_p" style="height: 4.5%; margin-top:2%">
+                    <input type="submit" class="top_div_small_p" value="Predict" style="height: 3.5%; margin-top:2%; float: center; font-size: 16px
+                    ;border-radius: 25px;width:10%">
+                    </input>
+                </p>
+                </form>
+                </p>
+        </div>
+    </body>
+</html>
