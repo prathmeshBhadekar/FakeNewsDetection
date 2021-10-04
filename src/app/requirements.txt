@@ -1,0 +1,15 @@
+scipy
+pandas
+scikit-learn
+sklearn
+numpy
+aiofiles
+tensorflow-cpu==2.6.0
+textblob
+fastapi
+uvicorn[standard]
+gunicorn
+python-multipart
+requests
+jinja2
+
