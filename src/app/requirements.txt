@@ -4,7 +4,7 @@ scikit-learn
 sklearn
 numpy
 aiofiles
-tensorflow-cpu==2.6.0
+tensorflow-cpu==2.6.1
 textblob
 fastapi
 uvicorn[standard]
